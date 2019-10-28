@@ -1,8 +1,8 @@
 package com.example.imdb.Repos;
 
-import Models.MovieRatings;
-import Models.Ratings;
-import Models.Movies;
+import com.example.imdb.Models.MovieRatings;
+import com.example.imdb.Models.Ratings;
+import com.example.imdb.Models.Movies;
 import com.example.imdb.ProjectVariables;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

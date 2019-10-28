@@ -1,7 +1,7 @@
 package com.example.imdb.Services;
 
-import Models.MovieRatings;
-import Models.Movies;
+import com.example.imdb.Models.MovieRatings;
+import com.example.imdb.Models.Movies;
 import com.example.imdb.Repos.DB;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

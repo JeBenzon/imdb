@@ -1,4 +1,4 @@
-package Models;
+package com.example.imdb.Models;
 
 public class Ratings {
     private int id;

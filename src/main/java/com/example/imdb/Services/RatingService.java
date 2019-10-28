@@ -1,6 +1,6 @@
 package com.example.imdb.Services;
 
-import Models.Ratings;
+import com.example.imdb.Models.Ratings;
 import com.example.imdb.Repos.DB;
 import org.springframework.stereotype.Service;
 

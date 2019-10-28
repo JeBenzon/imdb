@@ -1,8 +1,8 @@
 package com.example.imdb.Controllers;
 
-import Models.MovieRatings;
-import Models.Ratings;
-import Models.Movies;
+import com.example.imdb.Models.MovieRatings;
+import com.example.imdb.Models.Ratings;
+import com.example.imdb.Models.Movies;
 import com.example.imdb.Services.MovieService;
 import com.example.imdb.Services.RatingService;
 import org.springframework.beans.factory.annotation.Autowired;
