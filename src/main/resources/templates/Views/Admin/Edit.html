@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--/*/ <th:block th:include="Fragments/HeaderInc :: head"></th:block> /*/-->
+
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <h1 th:text="${'Edit: ' + movies.name}"></h1>
+    <form method="Put" th:method="put" th:action="@{/edit}" th:object="${movies}">
+        <input type="hidden" th:field="${movies.id}"/>
+        <label class="label">Name</label>
+        <input class="form-control" type="text" th:field="${movies.name}">
+        <br>
+        <label class="label">Year</label>
+        <input class="form-control" type="number" th:field="${movies.year}">
+        <br>
+        <label class="label">Duriation</label>
+        <input class="form-control" type="number" th:field="${movies.duriaton}">
+        <br>
+        <label class="label">Genre</label>
+        <input class="form-control" type="text" th:field="${movies.genre}">
+        <br>
+        <input class="btn btn-dark" type="submit" value="Edit">
+
+    </form>
+
+</div>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

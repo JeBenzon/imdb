@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+    <!--/*/ <th:block th:include="Fragments/HeaderInc :: head"></th:block> /*/-->
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <br>
+    <form action="#" th:action="@{/delete}" method="post">
+        <label class="label" th:text="${'Are you sure you want to delete: ' + movies.name}"></label>
+        <input type="hidden" th:field="${movies.id}">
+        <input class="btn btn-dark" type="submit" value="YES">
+        <a href="/admin" class="btn btn-dark">NO</a>
+    </form>
+</div>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
